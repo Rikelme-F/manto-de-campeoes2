@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Camisa Brasil Home",
+    "price": 249.90,
+    "image": "https://via.placeholder.com/300x400.png?text=Brasil",
+    "category": "Seleções"
+  },
+  {
+    "id": "2",
+    "name": "Camisa Flamengo 2023",
+    "price": 199.90,
+    "image": "https://via.placeholder.com/300x400.png?text=Flamengo",
+    "category": "Clubes"
+  },
+  {
+    "id": "3",
+    "name": "Camisa Barcelona Away",
+    "price": 279.90,
+    "image": "https://via.placeholder.com/300x400.png?text=Barcelona",
+    "category": "Clubes Internacionais"
+  },
+  {
+    "id": "4",
+    "name": "Camisa Palmeiras Third",
+    "price": 189.90,
+    "image": "https://via.placeholder.com/300x400.png?text=Palmeiras",
+    "category": "Clubes"
+  },
+  {
+    "id": "5",
+    "name": "Camisa Argentina Home",
+    "price": 259.9,
+    "image": "https://via.placeholder.com/300x400.png?text=Argentina",
+    "category": "Seleções"
+  },
+  {
+    "id": "6",
+    "name": "Camisa São Paulo Retrô",
+    "price": 229.9,
+    "image": "https://via.placeholder.com/300x400.png?text=São+Paulo",
+    "category": "Retrô"
+  }
+]
