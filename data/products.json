@@ -3,70 +3,70 @@
     "id": "1",
     "name": "Camisa Brasil Home",
     "price": 249.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Brasil",
+    "image": "img/Camisa-Brasil-Home.png",
     "category": "Seleções"
   },
   {
     "id": "2",
     "name": "Camisa Flamengo 2023",
     "price": 199.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Flamengo",
+    "image": "img/Camisa-Flamengo-2023.png",
     "category": "Clubes"
   },
   {
     "id": "3",
     "name": "Camisa Barcelona Away",
     "price": 279.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Barcelona",
+    "image": "img/Camisa-Barcelona-Away.png",
     "category": "Clubes Internacionais"
   },
   {
     "id": "4",
     "name": "Camisa Palmeiras Third",
     "price": 189.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Palmeiras",
+    "image": "img/Camisa-Palmeiras-Third.png",
     "category": "Clubes"
   },
   {
     "id": "5",
     "name": "Camisa Argentina Home",
     "price": 259.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Argentina",
+    "image": "img/Camisa-Argentina-Home.png",
     "category": "Seleções"
   },
   {
     "id": "6",
     "name": "Camisa São Paulo Retrô",
     "price": 229.90,
-    "image": "https://via.placeholder.com/300x400.png?text=São+Paulo",
+    "image": "img/Camisa-Sao-Paulo-Retro.png",
     "category": "Retrô"
   },
   {
     "id": "7",
     "name": "Camisa Real Madrid Home 2024",
     "price": 289.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Real+Madrid",
+    "image": "img/Camisa-Real-Madrid-Home-2024.png",
     "category": "Clubes Internacionais"
   },
   {
     "id": "8",
     "name": "Camisa Corinthians Third",
     "price": 219.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Corinthians",
+    "image": "img/Camisa-Corinthians-Third.png",
     "category": "Clubes"
   },
   {
     "id": "9",
     "name": "Camisa Manchester City Away",
     "price": 269.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Man+City",
+    "image": "img/Camisa-Manchester-City-Away.png",
     "category": "Clubes Internacionais"
   },
   {
     "id": "10",
     "name": "Camisa Vasco da Gama Home",
     "price": 199.90,
-    "image": "https://via.placeholder.com/300x400.png?text=Vasco",
+    "image": "img/Camisa-Vasco-da-Gama-Home.png",
     "category": "Clubes"
   }
 ]
