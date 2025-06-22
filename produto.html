@@ -1,0 +1,24 @@
+// Em um script dentro de produto.html
+
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const productId = params.get('id');
+
+  if (productId) {
+    // Agora, use o productId para buscar os dados do produto e renderizá-los
+    fetchProductDetails(productId);
+  }
+});
+
+async function fetchProductDetails(id) {
+  const response = await fetch('/data/products.json'); // Ou uma API real
+  const products = await response.json();
+  const product = products.find(p => p.id === id);
+
+  if (product) {
+    // Lógica para preencher o HTML da página com os detalhes do produto
+    document.getElementById('product-name').textContent = product.name;
+    document.getElementById('product-price').textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+    // ... etc
+  }
+}

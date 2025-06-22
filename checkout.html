@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Manto de Campeões</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Manto de Campeões</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Finalizar Compra</h1>
+        <div class="checkout-layout">
+            <div class="checkout-form">
+                <div class="card">
+                    <h3>Informações de Contato e Entrega</h3>
+                    <form id="checkout-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required>
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" required>
+                        <button type="submit" class="btn btn-primary checkout-btn">Ir para Pagamento</button>
+                    </form>
+                </div>
+            </div>
+            <aside class="order-summary">
+                <div class="card">
+                    <h3>Resumo do Pedido</h3>
+                    <div id="summary-items"></div>
+                    <hr>
+                    <div class="summary-total">
+                        <strong>Total:</strong>
+                        <strong id="summary-total-value">R$ 0,00</strong>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Manto de Campeões. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            const summaryItemsContainer = document.getElementById('summary-items');
+            const summaryTotalElement = document.getElementById('summary-total-value');
+            
+            if (cartItems.length === 0) {
+                summaryItemsContainer.innerHTML = '<p>Seu carrinho está vazio.</p>';
+            } else {
+                cartItems.forEach(item => {
+                    const itemElement = document.createElement('p');
+                    itemElement.textContent = `${item.quantity}x ${item.name}`;
+                    summaryItemsContainer.appendChild(itemElement);
+                });
+            }
+            
+            const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            summaryTotalElement.textContent = `R$ ${total.toFixed(2).replace(',', ',')}`;
+
+            document.getElementById('checkout-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Pedido realizado com sucesso! (Isso é uma simulação)');
+                localStorage.removeItem('cart'); // Limpa o carrinho
+                window.location.href = 'index.html'; // Redireciona para a home
+            });
+        });
+    </script>
+</body>
+</html>

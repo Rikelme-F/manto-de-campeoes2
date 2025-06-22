@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Manto de Campeões</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Manto de Campeões</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="produtos.html">Produtos</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" aria-label="Favoritos"><i class="fas fa-heart"></i></a>
+                <a href="#" aria-label="Conta"><i class="fas fa-user"></i></a>
+                <a href="#" aria-label="Carrinho"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Catálogo de Produtos</h1>
+        <div class="catalog">
+            <aside class="filters">
+                <h3>Filtros</h3>
+                <div class="filter-group">
+                    <h4>Categorias</h4>
+                    <label><input type="checkbox" name="category" value="selecoes"> Seleções</label>
+                    <label><input type="checkbox" name="category" value="clubes"> Clubes</label>
+                    <label><input type="checkbox" name="category" value="internacionais"> Internacionais</label>
+                    <label><input type="checkbox" name="category" value="retro"> Retrô</label>
+                </div>
+            </aside>
+            <section class="product-grid-container">
+                <div class="product-grid" id="product-list">
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Manto de Campeões. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Meu Carrinho</h2>
+            <button id="close-modal-btn" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items-container" class="modal-body">
+            </div>
+        <div class="modal-footer">
+            <div class="subtotal">
+                <strong>Subtotal:</strong>
+                <span id="cart-subtotal">R$ 0,00</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary checkout-btn">Finalizar Compra</a>
+        </div>
+    </div>
+</div>
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+</html>
