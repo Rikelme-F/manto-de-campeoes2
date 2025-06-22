@@ -50,12 +50,38 @@ a {
 
 .header-actions {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 .header-actions i {
     font-size: 1.2rem;
 }
+
+.cart-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    min-height: 20px;
+    box-sizing: border-box;
+}
+
 
 /* --- HERO SECTION --- */
 .hero {
@@ -106,6 +132,7 @@ a {
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.3s, transform 0.3s;
+    background-color: var(--background-color);
 }
 
 .product-card:hover {
@@ -241,6 +268,7 @@ a {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
+    background-color: var(--background-color);
 }
 
 .card h3 {
@@ -350,10 +378,10 @@ a {
 .checkout-btn {
     width: 100%;
     text-align: center;
-    margin-top: 1rem;
     background-color: var(--primary-color);
     color: white;
 }
+
 
 /* --- ESTILOS DA PÁGINA DE CHECKOUT --- */
 .checkout-layout {
@@ -410,7 +438,6 @@ a {
     justify-content: space-between;
     font-size: 1.2rem;
     margin-top: 1rem;
-<<<<<<< HEAD
 }
 
 /* --- DARK MODE --- */
@@ -447,6 +474,14 @@ a {
 
 [data-theme="dark"] .modal-content {
     background: var(--background-color);
+}
+
+[data-theme="dark"] .card {
+    background-color: #2a2a2a;
+}
+
+[data-theme="dark"] .filters label {
+    color: var(--text-color);
 }
 
 
@@ -497,6 +532,4 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(24px);
-=======
->>>>>>> 72fc0d430085382f3155a64e39896aaf7a0a7c30
 }

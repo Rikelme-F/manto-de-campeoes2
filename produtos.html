@@ -17,31 +17,21 @@
                 <a href="produtos.html">Produtos</a>
             </nav>
             <div class="header-actions">
-                <a href="#" aria-label="Favoritos"><i class="fas fa-heart"></i></a>
-                <a href="#" aria-label="Conta"><i class="fas fa-user"></i></a>
-                <a href="#" aria-label="Carrinho"><i class="fas fa-shopping-cart"></i></a>
+                <a href="minha-conta.html" aria-label="Conta"><i class="fas fa-user"></i></a>
+                <a href="#" aria-label="Carrinho" class="cart-icon-container" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
             </div>
         </div>
     </header>
 
     <main class="container">
         <h1 class="page-title">Catálogo de Produtos</h1>
-        <div class="catalog">
-            <aside class="filters">
-                <h3>Filtros</h3>
-                <div class="filter-group">
-                    <h4>Categorias</h4>
-                    <label><input type="checkbox" name="category" value="selecoes"> Seleções</label>
-                    <label><input type="checkbox" name="category" value="clubes"> Clubes</label>
-                    <label><input type="checkbox" name="category" value="internacionais"> Internacionais</label>
-                    <label><input type="checkbox" name="category" value="retro"> Retrô</label>
+        <section class="product-grid-container">
+            <div class="product-grid" id="product-list">
                 </div>
-            </aside>
-            <section class="product-grid-container">
-                <div class="product-grid" id="product-list">
-                    </div>
-            </section>
-        </div>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -51,22 +41,22 @@
     </footer>
 
     <div id="cart-modal" class="modal-overlay hidden">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h2>Meu Carrinho</h2>
-            <button id="close-modal-btn" class="close-btn">&times;</button>
-        </div>
-        <div id="cart-items-container" class="modal-body">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Meu Carrinho</h2>
+                <button id="close-modal-btn" class="close-btn">&times;</button>
             </div>
-        <div class="modal-footer">
-            <div class="subtotal">
-                <strong>Subtotal:</strong>
-                <span id="cart-subtotal">R$ 0,00</span>
+            <div id="cart-items-container" class="modal-body">
+                </div>
+            <div class="modal-footer">
+                <div class="subtotal">
+                    <strong>Subtotal:</strong>
+                    <span id="cart-subtotal">R$ 0,00</span>
+                </div>
+                <a href="checkout.html" class="btn btn-primary checkout-btn">Finalizar Compra</a>
             </div>
-            <a href="checkout.html" class="btn btn-primary checkout-btn">Finalizar Compra</a>
         </div>
     </div>
-</div>
 <script src="js/cart.js"></script>
 <script src="js/products.js"></script>
 
