@@ -410,6 +410,7 @@ a {
     justify-content: space-between;
     font-size: 1.2rem;
     margin-top: 1rem;
+<<<<<<< HEAD
 }
 
 /* --- DARK MODE --- */
@@ -496,4 +497,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(24px);
+=======
+>>>>>>> 72fc0d430085382f3155a64e39896aaf7a0a7c30
 }

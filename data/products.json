@@ -40,6 +40,7 @@
     "price": 229.9,
     "image": "https://via.placeholder.com/300x400.png?text=São+Paulo",
     "category": "Retrô"
+<<<<<<< HEAD
   },
   {
     "id": "7",
@@ -68,5 +69,7 @@
     "price": 199.90,
     "image": "https://via.placeholder.com/300x400.png?text=Vasco",
     "category": "Clubes"
+=======
+>>>>>>> 72fc0d430085382f3155a64e39896aaf7a0a7c30
   }
 ]
