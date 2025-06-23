@@ -1,10 +1,10 @@
 [
-  {
+ {
     "id": "1",
-    "name": "Camisa Brasil Home",
-    "price": 249.90,
-    "image": "img/Camisa-Brasil-Home.png",
-    "category": "Seleções"
+    "name": "Camisa Corinthians Third",
+    "price": 219.90,
+    "image": "img/Camisa-Corinthians-Third.png",
+    "category": "Clubes"
   },
   {
     "id": "2",
@@ -13,19 +13,19 @@
     "image": "img/Camisa-Flamengo-2023.png",
     "category": "Clubes"
   },
-  {
+{
     "id": "3",
-    "name": "Camisa Barcelona Away",
-    "price": 279.90,
-    "image": "img/Camisa-Barcelona-Away.png",
-    "category": "Clubes Internacionais"
-  },
-  {
-    "id": "4",
-    "name": "Camisa Palmeiras Third",
-    "price": 189.90,
-    "image": "img/Camisa-Palmeiras-Third.png",
+    "name": "Camisa Vasco da Gama Home",
+    "price": 199.90,
+    "image": "img/Camisa-Vasco-da-Gama-Home.png",
     "category": "Clubes"
+  },
+{
+    "id": "4",
+    "name": "Camisa São Paulo Retrô",
+    "price": 229.90,
+    "image": "img/Camisa-Sao-Paulo-Retro.png",
+    "category": "Retrô"
   },
   {
     "id": "5",
@@ -34,12 +34,12 @@
     "image": "img/Camisa-Argentina-Home.png",
     "category": "Seleções"
   },
-  {
+{
     "id": "6",
-    "name": "Camisa São Paulo Retrô",
-    "price": 229.90,
-    "image": "img/Camisa-Sao-Paulo-Retro.png",
-    "category": "Retrô"
+    "name": "Camisa Palmeiras Third",
+    "price": 189.90,
+    "image": "img/Camisa-Palmeiras-Third.png",
+    "category": "Clubes"
   },
   {
     "id": "7",
@@ -48,12 +48,13 @@
     "image": "img/Camisa-Real-Madrid-Home-2024.png",
     "category": "Clubes Internacionais"
   },
-  {
+
+ {
     "id": "8",
-    "name": "Camisa Corinthians Third",
-    "price": 219.90,
-    "image": "img/Camisa-Corinthians-Third.png",
-    "category": "Clubes"
+    "name": "Camisa Brasil Home",
+    "price": 249.90,
+    "image": "img/Camisa-Brasil-Home.png",
+    "category": "Seleções"
   },
   {
     "id": "9",
@@ -62,12 +63,12 @@
     "image": "img/Camisa-Manchester-City-Away.png",
     "category": "Clubes Internacionais"
   },
-  {
-    "id": "10",
-    "name": "Camisa Vasco da Gama Home",
-    "price": 199.90,
-    "image": "img/Camisa-Vasco-da-Gama-Home.png",
-    "category": "Clubes"
+    {
+    "id": "3",
+    "name": "Camisa Barcelona Away",
+    "price": 279.90,
+    "image": "img/Camisa-Barcelona-Away.png",
+    "category": "Clubes Internacionais"
   },
   {
     "id": "11",
@@ -106,10 +107,10 @@
   },
   {
     "id": "16",
-    "name": "Camisa Alemanha Home",
+    "name": "Camisa Santos Home",
     "price": 259.90,
-    "image": "img/Camisa-Alemanha-Home.png",
-    "category": "Seleções"
+    "image": "img/Camisa-Santos-Home.png",
+    "category": "Clubes"
   },
   {
     "id": "17",
