@@ -197,7 +197,32 @@ a {
 .filters {
     width: 200px;
     flex-shrink: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--background-color);
+    transition: background-color 0.3s, border-color 0.3s;
 }
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 
 .product-grid-container {
     flex-grow: 1;
@@ -488,10 +513,18 @@ a {
 
 [data-theme="dark"] .product-card,
 [data-theme="dark"] .card,
-[data-theme="dark"] .modal-content {
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .filters {
     background-color: var(--secondary-color);
     border-color: var(--border-color);
 }
+
+[data-theme="dark"] .filter-group select {
+    background-color: #3a3a3a;
+    color: var(--text-color);
+    border-color: #555;
+}
+
 
 [data-theme="dark"] .account-sidebar a:hover {
     background-color: #3a3a3a;
@@ -512,7 +545,6 @@ a {
 [data-theme="dark"] .filters label {
     color: var(--text-color);
 }
-
 
 /* --- THEME TOGGLE --- */
 .theme-switch-wrapper {
@@ -561,4 +593,25 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(24px);
+}
+
+/* --- SWIPER CAROUSEL --- */
+.featured-products {
+    position: relative;
+    padding-bottom: 50px; /* Add space for pagination */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.swiper-pagination {
+    bottom: 10px !important; /* Move pagination to the bottom */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary-color) !important;
 }
